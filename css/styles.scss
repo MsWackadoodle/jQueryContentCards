@@ -3,19 +3,61 @@ body {
 	font-family: 'Oswald', sans-serif;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(246, 242, 222);
+	background-color: lightblue;
 	margin: 0;
 	.container-fluid {
 		width: 100%;
+		height: 100vh;
+		#startover {
+			z-index: 5;
+			display: none;
+			width: 50%;
+			margin: 0 25%;
+			text-align: center;
+			position: relative;
+  			top: 50%;
+  			transform: translateY(-50%);
+			h3 {
+				font-weight: 400;
+				font-size: 1.5em;
+				margin-top: 0;
+			}
+			input {
+				display: inline-block;
+				width: 180px;
+				border: none;
+				font-family: inherit;
+				font-size: inherit;
+				background: white;
+				cursor: pointer;
+				padding: 25px 50px;
+				margin: 15px 30px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 400;
+			/* 	outline: none;
+				position: relative; */
+			}
+			#full {
+				height: 100vh; 
+				width: 100%;
+				background: url(../images/full.jpg) no-repeat center center; 
+				background-size: cover;
+			}
+		}
 		ul {
-			height: 100vh;
+			height: 99vh;
 			margin: 0 2%;
 			padding: 0;
-			position: relative;
+			/* position: relative; */
+			display: inline-block;
+			max-width: 1020px;
+			overflow: hidden;
 			li {
+				display: inline-block;
 				width: 400px;
 				height: 96vh;
-				margin: 2vh 0;
+				margin: 2vh 2%;
 				box-sizing: border-box; 
 				box-shadow: -1px -1px 4px 2px rgba(0,0,0,0.1);
 				list-style: none;
