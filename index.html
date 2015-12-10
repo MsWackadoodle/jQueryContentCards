@@ -5,19 +5,27 @@
 	<title>Try Card</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/jquery.color-2.1.0.min.js" type="text/javascript"></script>
 	<script src="js/handlebars-1.0.rc.1.min.js" type="text/javascript"></script>
 	<script src="js/cards.js" type="text/javascript"></script>
 	<script src="js/cardsControl.js" type="text/javascript"></script>
+	<script src="js/widthControl.js" type="text/javascript"></script> 
 </head>
 <body>
 <main>
 	<div class="container-fluid">
+		<div id="startover">
+			<h3>Would you like to start over?</h3>
+			<form action="" method="get"><input type="button" value="Yes" id="btn-yes"><input type="button" value="No" id="btn-no"></form>
+		</div>
 		<ul class="cards-nav" onmousedown="return false" onselectstart="return false"> <!-- <attrs - to prevent p tags from getting blue background when clicked.-->
 		<script id="hb-cards" type="x-handlebars-template">​
    		{{#each this}}<li class="card {{type}}"><div><p></p></div></li>{{/each}}
-​		</script>
+​		</script> 
 		</ul>
 	</div>
 </main>
 </body>
 </html>
+
